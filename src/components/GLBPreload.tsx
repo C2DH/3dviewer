@@ -35,7 +35,9 @@ const AdjustCamera = () => {
   const { camera, size } = useThree()
   useEffect(() => {
     const aspect = size.width / size.height
-    camera.aspect = aspect
+    if (camera instanceof THREE.PerspectiveCamera) {
+      camera.aspect = aspect
+    }
     camera.updateProjectionMatrix()
   }, [camera, size])
   return null

@@ -1,9 +1,13 @@
+import { Route, Routes } from 'react-router'
 import './App.css'
+import Viewer from './Viewer'
 
 const App = () => {
   return (
-    <div className='flex items-center justify-center min-h-screen'>
-      <h1>3dviewer</h1>
+    <div className='App'>
+      <Routes>
+        <Route path='/' element={<Viewer />} />
+      </Routes>
     </div>
   )
 }

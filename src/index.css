@@ -21,6 +21,7 @@ body,
 }
 
 body {
+  color: var(--accent);
   background: rgb(69, 70, 77);
   background: radial-gradient(
     circle,

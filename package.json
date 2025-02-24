@@ -4,8 +4,8 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
-    "build": "tsc -b && vite build",
+    "dev": "vite --base /3d-viewer",
+    "build": "tsc -b && vite build --base /3d-viewer",
     "lint": "eslint .",
     "preview": "vite preview"
   },
